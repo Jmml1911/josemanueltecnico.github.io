@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JM Space - Inicio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    img {
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      animation: zoomIn 1.5s ease-in-out;
+    }
+    h1 {
+      font-size: 3em;
+      margin: 20px 0 10px;
+      color: #22d3ee;
+      animation: slideDown 1.2s ease-in-out;
+    }
+    p {
+      font-size: 1.5em;
+      max-width: 600px;
+      margin-bottom: 30px;
+      color: #cbd5e1;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .button {
+      padding: 15px 30px;
+      background-color: #22d3ee;
+      color: #0f172a;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .button:hover {
+      background-color: #0ea5e9;
+      transform: scale(1.05);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <img src="logo_jm.jpg" alt="JM Logo">
+  <h1>JM Space</h1>
+  <p>"Tecnología hecha para los que saben. El mundo técnico no volverá a ser igual."</p>
+  <a href="dashboard.html"><button class="button">Entrar a la plataforma</button></a>
+</body>
+</html>
