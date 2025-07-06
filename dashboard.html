@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JM Space - Plataforma</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #ffffff;
+    }
+    header {
+      background-color: #1f2937;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #22d3ee;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #111827;
+      padding: 10px 0;
+      gap: 40px;
+      font-size: 1.1em;
+    }
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    nav a:hover {
+      color: #22d3ee;
+      transform: scale(1.05);
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .section h2 {
+      font-size: 2.5em;
+      color: #22d3ee;
+      margin-bottom: 30px;
+    }
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background-color: #1f2937;
+      border-radius: 12px;
+      padding: 20px;
+      width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+    .card h3 {
+      margin-top: 10px;
+      color: #22d3ee;
+    }
+    .card p {
+      font-size: 0.9em;
+      color: #cbd5e1;
+    }
+    .btn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #22d3ee;
+      color: #0f172a;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #0ea5e9;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1f2937;
+      font-size: 0.9em;
+      color: #94a3b8;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>JM ConvertiPower Pro</header>
+  <nav>
+    <a href="#software">Software</a>
+    <a href="#blog">Blog Técnico</a>
+    <a href="#portafolio">Portafolio</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <div id="software" class="section">
+    <h2>Software Disponible</h2>
+    <div class="cards-container">
+      <div class="card">
+        <h3>JM ConvertiPower APK</h3>
+        <p>App de ingeniería eléctrica e instrumentación avanzada.</p>
+        <button class="btn">Descargar APK</button>
+      </div>
+      <div class="card">
+        <h3>ConvertiPower para Windows</h3>
+        <p>Versión de escritorio con funciones pro.</p>
+        <button class="btn">Descargar EXE</button>
+      </div>
+      <div class="card">
+        <h3>Manual Técnico PDF</h3>
+        <p>Guía completa para usar todas las funciones.</p>
+        <button class="btn">Descargar PDF</button>
+      </div>
+    </div>
+  </div>
+  <div id="blog" class="section">
+    <h2>Blog Técnico</h2>
+    <div class="cards-container">
+      <div class="card">
+        <h3>¿Qué es una señal 4-20 mA?</h3>
+        <p>Explicación clara y práctica para técnicos industriales.</p>
+        <button class="btn">Leer más</button>
+      </div>
+      <div class="card">
+        <h3>Tipos de sensores industriales</h3>
+        <p>RTD, NTC, termopares, inductivos y más.</p>
+        <button class="btn">Leer más</button>
+      </div>
+      <div class="card">
+        <h3>Cómo conectar un PLC</h3>
+        <p>Guía básica para conexión de entradas y salidas.</p>
+        <button class="btn">Leer más</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 JM Space. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
